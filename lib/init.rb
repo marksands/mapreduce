@@ -3,6 +3,8 @@ require 'resque'
 require 'resque_scheduler'
 require 'resque/server'
 require 'json'
+
+$:.unshift File.join(File.dirname(__FILE__), '/')
 require 'mapreduce'
 
 # this is where we would start some server shit and get map reduce classes loaded
